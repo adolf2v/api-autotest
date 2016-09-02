@@ -1,0 +1,28 @@
+<testcase class="testcase" name="登录接口22">
+    <testcase>
+        <api>http://www.tupo.com/api/v1.2/login</api>
+        <desc>正常登录</desc>
+        <data>{"_xsrf": "2|084224b9|da57b7cd758f539cd1505da579a375a7|1433236535","identity": "xxxxxx","password":
+            "xxxxxxx", "autoLogin": "on", "utype": 1}
+        </data>
+        <method>post</method>
+        <assert1>
+            <status>200</status>
+            <retcode>0</retcode>
+            <content id="text">登录成功!</content>
+        </assert1>
+    </testcase>
+    <testcase>
+        <api>http://www.tupo.com/api/v1.2/login</api>
+        <desc>密码为空</desc>
+        <data>{"_xsrf": "2|084224b9|da57b7cd758f539cd1505da579a375a7|1433236535", "identity": "xxxxxxxxx","password":
+            "", "autoLogin": "on", "utype": 1}
+        </data>
+        <method>post</method>
+        <assert1>
+            <status>200</status>
+            <retcode>1</retcode>
+            <content id="text">您的用户名或密码不正确！</content>
+        </assert1>
+    </testcase>
+</testcase>
