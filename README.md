@@ -1,6 +1,9 @@
 #python 自动化api测试
 #python 自动化接口测试
 #api-autotest
+.需要有python环境
+.需要安装requests
+.需要安装BeautifulSoup
 .将测试用例格式化为统一的xml文件
 .用户只需要按照既定格式在case文件夹下边添加case相关的xml文件
 .然后在test.py将文件添加进去，并执行test.py文件，即可展开测试
