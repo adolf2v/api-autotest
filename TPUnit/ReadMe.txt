@@ -1,5 +1,5 @@
 读取xml并执行api自动化测试
 
 目前支持示例case.xml中一模一样的xml
-只支持post，get方法
+只支持post和get方法
 以后会有改进
